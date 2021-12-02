@@ -3,11 +3,11 @@
 .button-action {
     outline: none;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--hyper-primary);
     border-style: solid;
-    border-radius: 5px;
+    border-radius: var(--border-raidus);
     border-width: 0px;
-    border-color: #DEDEDE;
+    border-color: var(--hyper-primary);
     padding: 0.78rem;
     color: white;
     font-size: 1.25em;
@@ -18,7 +18,7 @@
 }
 
 .button-action--disabled {
-    background-color: darkgray;
+    background-color: var(--hyper-alt);
     cursor: unset;
 }
 
