@@ -6,6 +6,7 @@
     overflow: auto;
     flex-grow: 1;
     font-size: 1rem;
+    background-color: var(--background-color);
 }
 
 .list-item {
@@ -20,7 +21,7 @@
 
 .list-item:hover {
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: whitevar(--hyper-primary);
 }
 
 .list-item__child + .list-item__child {

@@ -128,10 +128,12 @@
 .symbol {
     display: inline-flex;
     flex-grow: 1;
+    color: white;
 }
 
 .input__icon {
     height: var(--component-content-height);
+    color: white;
 }
 
 .input__icon--chevron {

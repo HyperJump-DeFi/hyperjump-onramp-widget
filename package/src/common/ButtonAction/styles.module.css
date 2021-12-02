@@ -5,7 +5,7 @@
     cursor: pointer;
     background-color: var(--hyper-primary);
     border-style: solid;
-    border-radius: var(--border-raidus);
+    border-radius: var(--border-radius);
     border-width: 0px;
     border-color: var(--hyper-primary);
     padding: 0.78rem;
