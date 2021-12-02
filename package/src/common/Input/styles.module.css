@@ -40,21 +40,20 @@
 .network__bubble {
     margin-left: auto;
     margin-right: var(--component-content-spacing);
-    background-color: gray;
-    border-radius: var(--border-radius);
+    background-color: var(--hyper-primary);
+    border-radius: 8px;
     font-size: 0.75em;
     color: white;
-    padding: 0.35rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
     opacity: 0.5;
 }
 
 /*common to all input types*/
 .input__type {
-    background-color: white;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: #DEDEDE;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--hyper-primary);
     padding: var(--component-padding);
     display: flex;
     flex-direction: row;
