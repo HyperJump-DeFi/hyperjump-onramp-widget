@@ -12,6 +12,7 @@ theme styles
   --width: 100%;
   --heigth: 100%;
   --background-color: rgba(13, 29, 54, 0.5);
+  --background-color-alt: #152b4e;
   --hyper-primary: #44c4e2;
   --hyper-alt: #0a4b58;
   --padding-top: 1.75rem;
@@ -75,6 +76,28 @@ general styles
   color: white;
   font-size: 1rem;
   position: relative;
+  z-index: -1;
+}
+
+.view__pick {
+  --padding: var(--padding-top) var(--padding-rl) var(--padding-bottom)
+    var(--padding-rl);
+  --component-padding: 0.81rem;
+  --component-content-spacing: var(--component-padding);
+  --component-content-height: 1.27rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+  background-color: var(--background-color);
+  border: 2px solid #44c4e2;
+  border-bottom: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  background: inherit;
+  z-index: auto;
 }
 
 /*********
@@ -195,7 +218,7 @@ components
 .divisor {
   border: 0;
   width: 8rem;
-  border-top: 2px solid whitesmoke;
+  border-top: 2px solid #44c4e2;
   border-radius: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;

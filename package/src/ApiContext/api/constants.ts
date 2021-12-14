@@ -6,7 +6,7 @@ export const documents = [
 ];
 
 export const BASE_API =
-  process.env.STAGE === 'local' ?
+  process.env.STAGE === 'locals' ?
     "http://localhost:3000/dev" :
     process.env.STAGE === "prod"
       ? "https://onramper.tech"

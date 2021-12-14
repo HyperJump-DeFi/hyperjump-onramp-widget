@@ -55,7 +55,7 @@ function App() {
     display: "flex",
     flexDirection: "row",
     height: "100%",
-    backgroundColor: inIframe() ? "transparent" : "whitesmoke",
+    backgroundColor: inIframe() ? "transparent" : "black",
   } as React.CSSProperties;
 
   return (

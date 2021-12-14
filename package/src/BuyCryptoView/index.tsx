@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import BodyBuyCrypto from "./BodyBuyCrypto";
 import styles from "../styles.module.css";
 import PickView from "../PickView";
+import PickViewFiat from "../PickViewFiat";
 import ChooseGatewayView from "../ChooseGatewayView";
 import ErrorView from "../common/ErrorView";
 import Step from "../steps/Step";
@@ -32,7 +33,7 @@ const BuyCryptoView: React.FC = () => {
   //flagEffectInit used to call init again
   useEffect(() => {
     init();
-  }, [init/* , flagEffectInit */]);
+  }, [init]); /* , flagEffectInit */
 
   const handleItemClick = (name: string, index: number, item: ItemType) => {
     if (name === "crypto") handleCryptoChange(item);
@@ -83,7 +84,12 @@ const BuyCryptoView: React.FC = () => {
   }, [collected.selectedCountry]);
 
   useEffect(() => {
-    const prioritizedCrypto = !collected.recommendedCryptoCurrencies ? popularCrypto : arrayUnique([...collected.recommendedCryptoCurrencies, ...popularCrypto]);
+    const prioritizedCrypto = !collected.recommendedCryptoCurrencies
+      ? popularCrypto
+      : arrayUnique([
+          ...collected.recommendedCryptoCurrencies,
+          ...popularCrypto,
+        ]);
     const auxSortedCrypto = prioritizedCrypto
       .map((c) => data.availableCryptos.filter((crypto) => crypto.id === c)[0])
       .filter((c) => c !== undefined)
@@ -126,7 +132,7 @@ const BuyCryptoView: React.FC = () => {
           data.availableCurrencies.length > 1
             ? () =>
                 nextScreen(
-                  <PickView
+                  <PickViewFiat
                     name="currency"
                     title="Select fiat currency"
                     items={data.availableCurrencies}
