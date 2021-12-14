@@ -12,7 +12,7 @@ import { APIContext, ItemType, NextStep } from "../ApiContext";
 import * as API from "../ApiContext/api";
 import { arrayUnique } from "../utils";
 
-const popularCrypto = ["BTC", "ETH", "USDT", "BNB_BEP20", "USDC"];
+const popularCrypto = ["BTC", "ETH", "BNB_BEP20", "FTM"];
 
 const BuyCryptoView: React.FC = () => {
   const [isFilled, setIsFilled] = useState(false);

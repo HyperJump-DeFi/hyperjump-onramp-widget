@@ -45,7 +45,7 @@
 .list-item__info {
   font-size: 0.75em;
   margin-left: var(--component-content-spacing);
-  opacity: 0.9;
+  opacity: 0.25;
   color: white;
 }
 
