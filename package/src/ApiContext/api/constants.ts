@@ -10,7 +10,7 @@ export const BASE_API =
     "http://localhost:3000/dev" :
     process.env.STAGE === "prod"
       ? "https://onramper.tech"
-      : "https://staging.onramper.tech";
+      : "https://onramper.tech"; //https://staging.onramper.tech
 
 export const SANDBOX_HOSTNAME =
   process.env.STAGE === "prod"
