@@ -1,14 +1,10 @@
 {
-  "name": "@onramper/widget",
+  "name": "@hyperjump-defi/onramper-widget",
   "version": "2.2.6",
-  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/onramper/widget.git"
-  },
-  "bugs": {
-    "url": "https://github.com/onramper/widget/issues"
+    "url": "https://github.com/hyperjump-defi/onramper"
   },
   "keywords": [
     "cryptocurrency",
@@ -21,7 +17,7 @@
     "bitcoin",
     "ethereum"
   ],
-  "homepage": "https://onramper.com",
+  "homepage": "https://hyperjump.app",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

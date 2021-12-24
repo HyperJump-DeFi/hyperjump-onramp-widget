@@ -16,6 +16,7 @@
   padding: 1.125rem var(--padding-rl);
   height: var(--component-content-height);
   flex-shrink: 0;
+  color: white;
 }
 
 .list-item:hover {
@@ -38,12 +39,6 @@
   width: 100%;
   max-height: 1.75rem;
   max-width: 1.75rem;
-}
-
-.list-item__icon__fiat {
-  width: 100%;
-  max-height: 1.75rem;
-  max-width: 1.75rem;
   filter: invert(100%);
 }
 
@@ -51,6 +46,7 @@
   font-size: 0.75em;
   margin-left: var(--component-content-spacing);
   opacity: 0.25;
+  color: white;
 }
 
 .list-item_network {
@@ -72,7 +68,7 @@
   height: var(--component-content-height);
   border-style: none;
   line-height: 2em;
-  z-index: 1;
+  z-index: auto;
   flex-shrink: 0;
 }
 
